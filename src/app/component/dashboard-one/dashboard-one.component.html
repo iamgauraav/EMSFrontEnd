@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    
+</head>
+<body>
+    <div  class="container"> 
+        <div class=title></div>
+        <mat-toolbar color="primary">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon routerLink="/home">home</mat-icon>
+            </button>
+            <span>Employee Management System</span>
+            <span class="example-spacer"></span>
+            <button mat-raised-button color="warn" >Add Employee</button>
+          </mat-toolbar>
+          
+          <div class="container">
+          
+            <div class="table">
+              <table class="table1">
+                <tr>
+                  <th>EmpId</th>
+                  <th>FullName</th>
+                  <th>Email</th>
+                  <th>Password</th>
+                  <th>MobileNumber</th>
+                  <th>Address</th>
+                  <th>Gender</th>
+                  <th>Position</th>
+                  <th>Salary</th>
+          
+                </tr>
+                <tr >
+                  <!-- <td>{{arr.empId}}</td>
+                  <td>{{arr.fullName}}</td>
+                  <td>{{arr.email}}</td>
+                  <td> {{arr.password}}</td>
+                  <td>{{arr.mobileNumber}}</td>
+                  <td>{{arr.address}}</td>
+                  <td>{{arr.gender}}</td>
+                  <td>{{arr.position}}</td>
+                  <td>{{arr.salary}}</td> -->
+                  <div class="headbtn">
+                    <td><button class="editbtn" mat-icon-button > <mat-icon>update</mat-icon> </button></td>
+                    <td><button class="deletebtn" mat-icon-button ><mat-icon>delete</mat-icon></button></td>
+                  </div>
+                </tr>
+              </table>
+          
+          
+            </div>
+          </div>
+        <form action="#">
+
+            
+            <div class="button" fxLayout="row" fxLayoutAlign="space-between end">
+                <input type="submit" value="Close">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+        
+
+    </div>
+    
+</body>
+</html>
